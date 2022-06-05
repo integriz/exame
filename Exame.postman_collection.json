@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "03d6978e-db14-4103-9d3d-949ae79262f3",
+		"name": "Exame",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17767411"
+	},
+	"item": [
+		{
+			"name": "MovimentosManuais",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/movimentos/2019/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movimentos",
+						"2019",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MovimentoManual",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"datMes\": \"10\",\r\n        \"datAno\": \"2024\",\r\n        \"codProduto\": \"001\",\r\n        \"codCosif\": \"odcosif1\",\r\n        \"valValor\": \"10.89\",\r\n        \"desDescricao\": \"uma descrição\"\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/movimentos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movimentos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
